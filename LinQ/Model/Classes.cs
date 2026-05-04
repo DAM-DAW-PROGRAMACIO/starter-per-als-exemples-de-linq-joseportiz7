@@ -11,9 +11,6 @@ namespace LinQ.Model
     //    ├─ Llibre
     //    ├─ Pelicula
     //    └─ Canco
-    
-
-
 
 
     /// <summary>
