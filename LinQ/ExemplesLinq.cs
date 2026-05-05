@@ -20,6 +20,7 @@ namespace LinQ
             Console.WriteLine("=== EXEMPLE 1.1: Filtratge simple amb Where ===\n");
 
             var resultat = biblioteca.Elements.Where(x => x.Any > 1999);
+ 
         }
 
         /// <summary>
@@ -306,7 +307,8 @@ namespace LinQ
             var biblioteca = GeneradorDades.CreaBiblioteca();
             Console.WriteLine("\n=== EXEMPLE 7.3: Agrupació amb filtre de grups ===\n");
 
-            
+            var filtrehaving = biblioteca.Elements
+                
         }
 
         #endregion
@@ -323,6 +325,11 @@ namespace LinQ
             var biblioteca = GeneradorDades.CreaBiblioteca();
             Console.WriteLine("\n=== EXEMPLE 8.1: Elements únics amb Distinct ===\n");
 
+            var autorsUnics = biblioteca.Elements
+                .Select(x => x.Autor)
+                .Distinct()
+                .OrderBy(animal => animal)
+                .ToList;
             
         }
 
@@ -421,8 +428,25 @@ namespace LinQ
             var biblioteca = GeneradorDades.CreaBiblioteca();
             Console.WriteLine("\n=== EXEMPLE 10.3: Consulta amb relacions (join implícit) ===\n");
 
-            
+            var autorsMultiples = from p in biblioteca.Elements.OfType<Pelicula>()
+                                  from l in biblioteca.Elements.OfType<Llibre>()
+                                  where p.Autor.Equals(l.Autor)
+                                  select new
+                                  {
+                                      Nom = p.Autor,
+                                      Pelicula = p.Titol,
+                                      Llibre = l.Titol
+                                  };
         }
+
+        public static void Exemplerandomjordi()
+        {
+            var biblioteca = GeneradorDades.CreaBiblioteca();
+            var etiquetes = biblioteca.Elements
+                .SelectMany(e => e.Etiquetes)
+                .Distinct();
+        }
+        
 
         #endregion
 
@@ -431,6 +455,7 @@ namespace LinQ
         /// <summary>
         /// Executa tots els exemples del tutorial en ordre
         /// </summary>
+
         public static void ExecutaComplet()
         {
             Console.WriteLine("*************************************************************************");

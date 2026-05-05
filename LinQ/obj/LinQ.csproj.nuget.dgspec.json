@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\josep\\Desktop\\starter-per-als-exemples-de-linq-joseportiz7\\LinQ\\LinQ.csproj": {}
+    "C:\\Users\\mnsizkklaptop\\Desktop\\GitHub\\starter-per-als-exemples-de-linq-joseportiz7\\LinQ\\LinQ.csproj": {}
   },
   "projects": {
-    "C:\\Users\\josep\\Desktop\\starter-per-als-exemples-de-linq-joseportiz7\\LinQ\\LinQ.csproj": {
+    "C:\\Users\\mnsizkklaptop\\Desktop\\GitHub\\starter-per-als-exemples-de-linq-joseportiz7\\LinQ\\LinQ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\josep\\Desktop\\starter-per-als-exemples-de-linq-joseportiz7\\LinQ\\LinQ.csproj",
+        "projectUniqueName": "C:\\Users\\mnsizkklaptop\\Desktop\\GitHub\\starter-per-als-exemples-de-linq-joseportiz7\\LinQ\\LinQ.csproj",
         "projectName": "LinQ",
-        "projectPath": "C:\\Users\\josep\\Desktop\\starter-per-als-exemples-de-linq-joseportiz7\\LinQ\\LinQ.csproj",
-        "packagesPath": "C:\\Users\\josep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\josep\\Desktop\\starter-per-als-exemples-de-linq-joseportiz7\\LinQ\\obj\\",
+        "projectPath": "C:\\Users\\mnsizkklaptop\\Desktop\\GitHub\\starter-per-als-exemples-de-linq-joseportiz7\\LinQ\\LinQ.csproj",
+        "packagesPath": "C:\\Users\\mnsizkklaptop\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mnsizkklaptop\\Desktop\\GitHub\\starter-per-als-exemples-de-linq-joseportiz7\\LinQ\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\josep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mnsizkklaptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,7 +46,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
@@ -63,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300-preview.0.26177.108/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
